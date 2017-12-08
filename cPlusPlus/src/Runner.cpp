@@ -16,26 +16,3 @@ void runAll()
 {
 	runExceptions();
 }
-
-/// <summary>
-/// Exceptions
-/// </summary>
-void runExceptions()
-{
-	try
-	{
-		usesMightGoWrong();
-	}
-	catch (int e)
-	{
-		cout << "Error code: " << e << endl;
-	}
-	catch (char const *e)
-	{
-		cout << "Error message: " << e << endl;
-	}
-	catch (string &e) // by reference
-	{
-		cout << "String error message: " << e << endl;
-	}
-}

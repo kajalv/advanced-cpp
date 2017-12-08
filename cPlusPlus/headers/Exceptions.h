@@ -4,3 +4,6 @@
 
 void mightGoWrong();
 void usesMightGoWrong();
+void usesClassThatCanGoWrong();
+
+void runExceptions();

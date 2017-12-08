@@ -4,5 +4,3 @@
 
 void runAll();
 int main();
-
-void runExceptions();
