@@ -1,6 +1,7 @@
 #include "Runner.h"
 #include "Exceptions.h"
 #include "DerivedException.h"
+#include "SubclassExceptions.h"
 
 int main()
 {
@@ -17,4 +18,5 @@ void runAll()
 {
 	runExceptions();
 	runDerivedException();
+	runSubclassExceptions();
 }
