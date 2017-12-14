@@ -24,12 +24,18 @@
     <ClInclude Include="headers\cppincl.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="headers\DerivedException.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Runner.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\Exceptions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DerivedException.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
