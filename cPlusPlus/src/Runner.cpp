@@ -2,6 +2,7 @@
 #include "Exceptions.h"
 #include "DerivedException.h"
 #include "SubclassExceptions.h"
+#include "CreateFile.h"
 
 int main()
 {
@@ -19,4 +20,5 @@ void runAll()
 	runExceptions();
 	runDerivedException();
 	runSubclassExceptions();
+	runCreateFile();
 }
