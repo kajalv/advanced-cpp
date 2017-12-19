@@ -154,6 +154,7 @@
     <ClCompile Include="src\CreateFile.cpp" />
     <ClCompile Include="src\DerivedException.cpp" />
     <ClCompile Include="src\Exceptions.cpp" />
+    <ClCompile Include="src\ParseFile.cpp" />
     <ClCompile Include="src\ReadFile.cpp" />
     <ClCompile Include="src\Runner.cpp" />
     <ClCompile Include="src\SubclassExceptions.cpp" />
@@ -163,6 +164,7 @@
     <ClInclude Include="headers\CreateFile.h" />
     <ClInclude Include="headers\DerivedException.h" />
     <ClInclude Include="headers\Exceptions.h" />
+    <ClInclude Include="headers\ParseFile.h" />
     <ClInclude Include="headers\ReadFile.h" />
     <ClInclude Include="headers\Runner.h" />
     <ClInclude Include="headers\SubclassExceptions.h" />

@@ -2,4 +2,4 @@
 
 #include "cppincl.h"
 
-void runReadFile();
+void runParseFile();

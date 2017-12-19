@@ -4,6 +4,7 @@
 #include "SubclassExceptions.h"
 #include "CreateFile.h"
 #include "ReadFile.h"
+#include "ParseFile.h"
 
 int main()
 {
@@ -23,4 +24,5 @@ void runAll()
 	runSubclassExceptions();
 	runCreateFile();
 	runReadFile();
+	runParseFile();
 }
