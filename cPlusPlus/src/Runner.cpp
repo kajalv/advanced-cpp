@@ -3,6 +3,7 @@
 #include "DerivedException.h"
 #include "SubclassExceptions.h"
 #include "CreateFile.h"
+#include "ReadFile.h"
 
 int main()
 {
@@ -21,4 +22,5 @@ void runAll()
 	runDerivedException();
 	runSubclassExceptions();
 	runCreateFile();
+	runReadFile();
 }
