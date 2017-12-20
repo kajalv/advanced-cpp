@@ -151,14 +151,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\BinaryFileAndPadding.cpp" />
-    <ClCompile Include="src\CreateFile.cpp" />
-    <ClCompile Include="src\DerivedException.cpp" />
-    <ClCompile Include="src\Exceptions.cpp" />
-    <ClCompile Include="src\ParseFile.cpp" />
-    <ClCompile Include="src\ReadFile.cpp" />
+    <ClCompile Include="src\files\BinaryFileAndPadding.cpp" />
+    <ClCompile Include="src\files\CreateFile.cpp" />
+    <ClCompile Include="src\exceptions\DerivedException.cpp" />
+    <ClCompile Include="src\exceptions\Exceptions.cpp" />
+    <ClCompile Include="src\files\ParseFile.cpp" />
+    <ClCompile Include="src\files\ReadFile.cpp" />
     <ClCompile Include="src\Runner.cpp" />
-    <ClCompile Include="src\SubclassExceptions.cpp" />
+    <ClCompile Include="src\exceptions\SubclassExceptions.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="headers\BinaryFileAndPadding.h" />

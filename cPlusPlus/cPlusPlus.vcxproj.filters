@@ -47,25 +47,25 @@
     <ClCompile Include="src\Runner.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Exceptions.cpp">
+    <ClCompile Include="src\files\BinaryFileAndPadding.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\DerivedException.cpp">
+    <ClCompile Include="src\files\CreateFile.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\SubclassExceptions.cpp">
+    <ClCompile Include="src\exceptions\Exceptions.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\CreateFile.cpp">
+    <ClCompile Include="src\exceptions\DerivedException.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\ReadFile.cpp">
+    <ClCompile Include="src\files\ParseFile.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\ParseFile.cpp">
+    <ClCompile Include="src\files\ReadFile.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\BinaryFileAndPadding.cpp">
+    <ClCompile Include="src\exceptions\SubclassExceptions.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

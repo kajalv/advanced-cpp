@@ -31,7 +31,7 @@ struct PersonNotPadded
 };
 
 // undo the directive so it doesn't apply to whatever comes after it
-#pragma pop
+#pragma pack(pop)
 
 void checkPadding()
 {
