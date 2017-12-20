@@ -5,6 +5,7 @@
 #include "CreateFile.h"
 #include "ReadFile.h"
 #include "ParseFile.h"
+#include "BinaryFileAndPadding.h"
 
 int main()
 {
@@ -25,4 +26,6 @@ void runAll()
 	runCreateFile();
 	runReadFile();
 	runParseFile();
+	checkPadding();
+	runBinaryFile();
 }

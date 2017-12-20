@@ -151,6 +151,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\BinaryFileAndPadding.cpp" />
     <ClCompile Include="src\CreateFile.cpp" />
     <ClCompile Include="src\DerivedException.cpp" />
     <ClCompile Include="src\Exceptions.cpp" />
@@ -160,6 +161,7 @@
     <ClCompile Include="src\SubclassExceptions.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="headers\BinaryFileAndPadding.h" />
     <ClInclude Include="headers\cppincl.h" />
     <ClInclude Include="headers\CreateFile.h" />
     <ClInclude Include="headers\DerivedException.h" />

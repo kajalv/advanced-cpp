@@ -39,6 +39,9 @@
     <ClInclude Include="headers\ParseFile.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="headers\BinaryFileAndPadding.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Runner.cpp">
@@ -60,6 +63,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\ParseFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BinaryFileAndPadding.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
