@@ -6,6 +6,8 @@
 #include "ReadFile.h"
 #include "ParseFile.h"
 #include "BinaryFileAndPadding.h"
+#include "Vectors.h"
+#include "VectorsMemory.h"
 
 int main()
 {
@@ -28,4 +30,6 @@ void runAll()
 	runParseFile();
 	checkPadding();
 	runBinaryFile();
+	runVectors();
+	runVectorsAndMemory();
 }

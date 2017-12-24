@@ -159,6 +159,8 @@
     <ClCompile Include="src\files\ReadFile.cpp" />
     <ClCompile Include="src\Runner.cpp" />
     <ClCompile Include="src\exceptions\SubclassExceptions.cpp" />
+    <ClCompile Include="src\stl\Vectors.cpp" />
+    <ClCompile Include="src\stl\VectorsMemory.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="headers\BinaryFileAndPadding.h" />
@@ -170,6 +172,8 @@
     <ClInclude Include="headers\ReadFile.h" />
     <ClInclude Include="headers\Runner.h" />
     <ClInclude Include="headers\SubclassExceptions.h" />
+    <ClInclude Include="headers\Vectors.h" />
+    <ClInclude Include="headers\VectorsMemory.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
