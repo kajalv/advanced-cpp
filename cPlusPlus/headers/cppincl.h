@@ -6,5 +6,6 @@
 #include <exception> // this is part of iostream but can be included separately if needed
 #include <fstream>
 #include <vector>
+#include <list>
 
 using namespace std;

@@ -9,6 +9,7 @@
 #include "Vectors.h"
 #include "VectorsMemory.h"
 #include "TwoDimVectors.h"
+#include "List.h"
 
 int main()
 {
@@ -34,4 +35,5 @@ void runAll()
 	runVectors();
 	runVectorsAndMemory();
 	run2DVectors();
+	runList();
 }
