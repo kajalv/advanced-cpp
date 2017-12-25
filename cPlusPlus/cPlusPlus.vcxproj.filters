@@ -48,6 +48,9 @@
     <ClInclude Include="headers\VectorsMemory.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="headers\TwoDimVectors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Runner.cpp">
@@ -78,6 +81,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\stl\VectorsMemory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stl\TwoDimVectors.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

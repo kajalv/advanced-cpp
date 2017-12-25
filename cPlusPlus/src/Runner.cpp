@@ -8,6 +8,7 @@
 #include "BinaryFileAndPadding.h"
 #include "Vectors.h"
 #include "VectorsMemory.h"
+#include "TwoDimVectors.h"
 
 int main()
 {
@@ -32,4 +33,5 @@ void runAll()
 	runBinaryFile();
 	runVectors();
 	runVectorsAndMemory();
+	run2DVectors();
 }
