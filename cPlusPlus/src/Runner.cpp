@@ -10,6 +10,7 @@
 #include "VectorsMemory.h"
 #include "TwoDimVectors.h"
 #include "List.h"
+#include "Maps.h"
 
 int main()
 {
@@ -36,4 +37,7 @@ void runAll()
 	runVectorsAndMemory();
 	run2DVectors();
 	runList();
+	runMaps();
+
+	getchar();
 }

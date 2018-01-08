@@ -54,6 +54,9 @@
     <ClInclude Include="headers\List.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="headers\Maps.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Runner.cpp">
@@ -90,6 +93,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\stl\List.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stl\Maps.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
