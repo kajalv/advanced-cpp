@@ -11,6 +11,7 @@
 #include "TwoDimVectors.h"
 #include "List.h"
 #include "Maps.h"
+#include "MapCustomValue.h"
 
 int main()
 {
@@ -38,6 +39,7 @@ void runAll()
 	run2DVectors();
 	runList();
 	runMaps();
+	runMapCustomValue();
 
 	getchar();
 }

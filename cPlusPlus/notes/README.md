@@ -17,3 +17,9 @@ You would throw std::exception if the calling code doesn't need to know the deta
 For example, if the exception is going to be displayed to the user, there is no point showing them obscure errors
 which will be meaningless to them. Also, if the calling code doesn't know about your exception, throwing std::exception
 will ensure it gets handled.
+
+# Notes on Copy Constructor
+
+In a custom object - the assignment operator performs a shallow copy. This becomes a problem when there are pointers.
+We may not want to copy the pointer itself, it may get deallocated and invalidated, etc.
+So we need to overload the copy constructor and assignment operator in this case.
