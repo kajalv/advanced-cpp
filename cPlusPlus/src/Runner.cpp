@@ -12,6 +12,7 @@
 #include "List.h"
 #include "Maps.h"
 #include "MapCustomValue.h"
+#include "MapCustomKey.h"
 
 int main()
 {
@@ -40,6 +41,7 @@ void runAll()
 	runList();
 	runMaps();
 	runMapCustomValue();
+	runMapCustomKey();
 
 	getchar();
 }
