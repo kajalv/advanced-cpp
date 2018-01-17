@@ -13,6 +13,7 @@
 #include "Maps.h"
 #include "MapCustomValue.h"
 #include "MapCustomKey.h"
+#include "MultiMap.h"
 
 int main()
 {
@@ -42,6 +43,7 @@ void runAll()
 	runMaps();
 	runMapCustomValue();
 	runMapCustomKey();
+	runMultiMap();
 
 	getchar();
 }

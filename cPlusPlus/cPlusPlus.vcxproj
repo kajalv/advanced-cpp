@@ -163,6 +163,7 @@
     <ClCompile Include="src\stl\MapCustomKey.cpp" />
     <ClCompile Include="src\stl\MapCustomValue.cpp" />
     <ClCompile Include="src\stl\Maps.cpp" />
+    <ClCompile Include="src\stl\MultiMap.cpp" />
     <ClCompile Include="src\stl\TwoDimVectors.cpp" />
     <ClCompile Include="src\stl\Vectors.cpp" />
     <ClCompile Include="src\stl\VectorsMemory.cpp" />
@@ -177,6 +178,7 @@
     <ClInclude Include="headers\MapCustomKey.h" />
     <ClInclude Include="headers\MapCustomValue.h" />
     <ClInclude Include="headers\Maps.h" />
+    <ClInclude Include="headers\MultiMap.h" />
     <ClInclude Include="headers\ParseFile.h" />
     <ClInclude Include="headers\ReadFile.h" />
     <ClInclude Include="headers\Runner.h" />
