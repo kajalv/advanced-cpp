@@ -165,6 +165,7 @@
     <ClCompile Include="src\stl\Maps.cpp" />
     <ClCompile Include="src\stl\MultiMap.cpp" />
     <ClCompile Include="src\stl\Set.cpp" />
+    <ClCompile Include="src\stl\StacksAndQueues.cpp" />
     <ClCompile Include="src\stl\TwoDimVectors.cpp" />
     <ClCompile Include="src\stl\Vectors.cpp" />
     <ClCompile Include="src\stl\VectorsMemory.cpp" />
@@ -184,6 +185,7 @@
     <ClInclude Include="headers\ReadFile.h" />
     <ClInclude Include="headers\Runner.h" />
     <ClInclude Include="headers\Set.h" />
+    <ClInclude Include="headers\StacksAndQueues.h" />
     <ClInclude Include="headers\SubclassExceptions.h" />
     <ClInclude Include="headers\TwoDimVectors.h" />
     <ClInclude Include="headers\Vectors.h" />

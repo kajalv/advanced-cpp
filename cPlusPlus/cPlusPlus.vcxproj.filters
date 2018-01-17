@@ -69,6 +69,9 @@
     <ClInclude Include="headers\Set.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="headers\StacksAndQueues.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Runner.cpp">
@@ -120,6 +123,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\stl\Set.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stl\StacksAndQueues.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -15,6 +15,7 @@
 #include "MapCustomKey.h"
 #include "MultiMap.h"
 #include "Set.h"
+#include "StacksAndQueues.h"
 
 int main()
 {
@@ -46,6 +47,7 @@ void runAll()
 	runMapCustomKey();
 	runMultiMap();
 	runSets();
+	runStackQueue();
 
 	getchar();
 }
