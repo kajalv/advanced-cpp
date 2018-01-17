@@ -14,6 +14,7 @@
 #include "MapCustomValue.h"
 #include "MapCustomKey.h"
 #include "MultiMap.h"
+#include "Set.h"
 
 int main()
 {
@@ -44,6 +45,7 @@ void runAll()
 	runMapCustomValue();
 	runMapCustomKey();
 	runMultiMap();
+	runSets();
 
 	getchar();
 }
