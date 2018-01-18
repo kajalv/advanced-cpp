@@ -16,6 +16,7 @@
 #include "MultiMap.h"
 #include "Set.h"
 #include "StacksAndQueues.h"
+#include "SortVectors.h"
 
 int main()
 {
@@ -48,6 +49,7 @@ void runAll()
 	runMultiMap();
 	runSets();
 	runStackQueue();
+	testSortVectors();
 
 	getchar();
 }

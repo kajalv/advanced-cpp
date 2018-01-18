@@ -23,3 +23,7 @@ will ensure it gets handled.
 In a custom object - the assignment operator performs a shallow copy. This becomes a problem when there are pointers.
 We may not want to copy the pointer itself, it may get deallocated and invalidated, etc.
 So we need to overload the copy constructor and assignment operator in this case.
+
+# STL
+
+Deque (pronounced deck) - double ended queue, can push to front as well as back
