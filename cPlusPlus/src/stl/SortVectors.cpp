@@ -52,7 +52,7 @@ bool comp(const TestSort2 &a, const TestSort2 &b)
 	return a.m_name < b.m_name;
 }
 
-void testSortVectors()
+void runSortVectors()
 {
 	vector<TestSort1> tests1;
 	vector<TestSort2> tests2;

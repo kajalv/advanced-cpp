@@ -27,3 +27,7 @@ So we need to overload the copy constructor and assignment operator in this case
 # STL
 
 Deque (pronounced deck) - double ended queue, can push to front as well as back
+
+# Rule of Three
+
+If you define any one of a copy constructor or = or destructor, you should implement all three.

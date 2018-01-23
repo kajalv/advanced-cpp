@@ -157,6 +157,7 @@
     <ClCompile Include="src\exceptions\Exceptions.cpp" />
     <ClCompile Include="src\files\ParseFile.cpp" />
     <ClCompile Include="src\files\ReadFile.cpp" />
+    <ClCompile Include="src\operators\AssignmentOperator.cpp" />
     <ClCompile Include="src\Runner.cpp" />
     <ClCompile Include="src\exceptions\SubclassExceptions.cpp" />
     <ClCompile Include="src\stl\List.cpp" />
@@ -172,6 +173,7 @@
     <ClCompile Include="src\stl\VectorsMemory.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="headers\AssignmentOperator.h" />
     <ClInclude Include="headers\BinaryFileAndPadding.h" />
     <ClInclude Include="headers\cppincl.h" />
     <ClInclude Include="headers\CreateFile.h" />

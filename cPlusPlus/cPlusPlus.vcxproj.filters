@@ -75,6 +75,9 @@
     <ClInclude Include="headers\SortVectors.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="headers\AssignmentOperator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Runner.cpp">
@@ -132,6 +135,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\stl\SortVectors.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\operators\AssignmentOperator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
