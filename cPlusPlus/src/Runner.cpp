@@ -18,6 +18,7 @@
 #include "StacksAndQueues.h"
 #include "SortVectors.h"
 #include "AssignmentOperator.h"
+#include "InsertionOperator.h"
 
 int main()
 {
@@ -52,6 +53,7 @@ void runAll()
 	runStackQueue();
 	runSortVectors();
 	runAssignmentOpOverload();
+	runInsertionOpOverload();
 
 	getchar();
 }

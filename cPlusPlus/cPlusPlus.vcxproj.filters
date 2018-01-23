@@ -78,6 +78,9 @@
     <ClInclude Include="headers\AssignmentOperator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="headers\InsertionOperator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Runner.cpp">
@@ -138,6 +141,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\operators\AssignmentOperator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\operators\InsertionOperator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

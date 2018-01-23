@@ -158,6 +158,7 @@
     <ClCompile Include="src\files\ParseFile.cpp" />
     <ClCompile Include="src\files\ReadFile.cpp" />
     <ClCompile Include="src\operators\AssignmentOperator.cpp" />
+    <ClCompile Include="src\operators\InsertionOperator.cpp" />
     <ClCompile Include="src\Runner.cpp" />
     <ClCompile Include="src\exceptions\SubclassExceptions.cpp" />
     <ClCompile Include="src\stl\List.cpp" />
@@ -179,6 +180,7 @@
     <ClInclude Include="headers\CreateFile.h" />
     <ClInclude Include="headers\DerivedException.h" />
     <ClInclude Include="headers\Exceptions.h" />
+    <ClInclude Include="headers\InsertionOperator.h" />
     <ClInclude Include="headers\List.h" />
     <ClInclude Include="headers\MapCustomKey.h" />
     <ClInclude Include="headers\MapCustomValue.h" />
