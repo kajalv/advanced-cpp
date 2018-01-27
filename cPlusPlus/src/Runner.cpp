@@ -19,6 +19,7 @@
 #include "SortVectors.h"
 #include "AssignmentOperator.h"
 #include "InsertionOperator.h"
+#include "ComplexNumber.h"
 
 int main()
 {
@@ -54,6 +55,7 @@ void runAll()
 	runSortVectors();
 	runAssignmentOpOverload();
 	runInsertionOpOverload();
+	runComplexNumbers();
 
 	getchar();
 }
