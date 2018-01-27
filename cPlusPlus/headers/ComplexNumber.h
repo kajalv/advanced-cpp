@@ -25,6 +25,9 @@ namespace ComplexNumbers
 		// overloading the plus operator - it can either be a member function, or to make it more encapsulated,
 		// it can be a free-standing function like <<.
 
+		bool operator==(const Complex &other) const;
+		bool operator!=(const Complex &other) const;
+
 	private:
 		double m_real;
 		double m_imaginary;

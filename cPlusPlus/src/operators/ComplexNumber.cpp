@@ -1,15 +1,20 @@
 #include "ComplexNumber.h"
 
+using namespace ComplexNumbers;
+
 void runComplexNumbers()
 {
-	ComplexNumbers::Complex c1(2, 3);
+	Complex c1(2, 3);
 	cout << c1;
 
-	ComplexNumbers::Complex c2(4, 5);
+	Complex c2(4, 5);
 	cout << c1 + c2;
 
-	ComplexNumbers::Complex c3(4, 2);
+	Complex c3(4, 2);
 	cout << c3 + 8;
+	Complex c4(c3);
+
+	cout << (c1 == c2) << " " << !(c3 == c4) << endl;
 }
 
 namespace ComplexNumbers
@@ -56,5 +61,15 @@ namespace ComplexNumbers
 		//return Complex(c1.getReal() + d, c1.getImaginary());
 		// OR 
 		return operator+(c1, d);
+	}
+
+	bool Complex::operator==(const Complex &other) const
+	{
+		return m_real == other.m_real && m_imaginary == other.m_imaginary;
+	}
+
+	bool Complex::operator!=(const Complex &other) const
+	{
+		return !(*this == other);
 	}
 }
