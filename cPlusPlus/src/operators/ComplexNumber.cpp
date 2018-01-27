@@ -4,6 +4,12 @@ void runComplexNumbers()
 {
 	ComplexNumbers::Complex c1(2, 3);
 	cout << c1;
+
+	ComplexNumbers::Complex c2(4, 5);
+	cout << c1 + c2;
+
+	ComplexNumbers::Complex c3(4, 2);
+	cout << c3 + 8;
 }
 
 namespace ComplexNumbers
@@ -33,5 +39,22 @@ namespace ComplexNumbers
 	{
 		out << complexNum.m_real << " + " << complexNum.m_imaginary << "i" << endl;
 		return out;
+	}
+
+	Complex operator+(const Complex &c1, const Complex &c2)
+	{
+		return Complex(c1.getReal() + c2.getReal(), c1.getImaginary() + c2.getImaginary());
+	}
+
+	Complex operator+(const Complex &c1, double d)
+	{
+		return Complex(c1.getReal() + d, c1.getImaginary());
+	}
+
+	Complex operator+(double d, const Complex &c1)
+	{
+		//return Complex(c1.getReal() + d, c1.getImaginary());
+		// OR 
+		return operator+(c1, d);
 	}
 }
