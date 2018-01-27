@@ -15,6 +15,9 @@ void runComplexNumbers()
 	Complex c4(c3);
 
 	cout << (c1 == c2) << " " << !(c3 == c4) << endl;
+	cout << c1 << *c1;
+
+	// just be careful with operator precedence when applying many operators at once.
 }
 
 namespace ComplexNumbers
@@ -42,7 +45,7 @@ namespace ComplexNumbers
 
 	ostream &operator<<(ostream &out, const Complex &complexNum)
 	{
-		out << complexNum.m_real << " + " << complexNum.m_imaginary << "i" << endl;
+		out << "(" << complexNum.m_real << ", " << complexNum.m_imaginary << ")" << endl;
 		return out;
 	}
 
@@ -71,5 +74,11 @@ namespace ComplexNumbers
 	bool Complex::operator!=(const Complex &other) const
 	{
 		return !(*this == other);
+	}
+
+	// overload the dereference operator to give the complex conjugate
+	Complex Complex::operator*() const
+	{
+		return Complex(m_real, -m_imaginary);
 	}
 }
