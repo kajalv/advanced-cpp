@@ -21,6 +21,7 @@
 #include "InsertionOperator.h"
 #include "ComplexNumber.h"
 #include "UsingTemplates.h"
+#include "FunctionPointers.h"
 
 int main()
 {
@@ -58,6 +59,7 @@ void runAll()
 	runInsertionOpOverload();
 	runComplexNumbers();
 	runUsingTemplates();
+	runFunctionPointers();
 
 	getchar();
 }

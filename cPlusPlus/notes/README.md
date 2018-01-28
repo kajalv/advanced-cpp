@@ -36,3 +36,8 @@ If you define any one of a copy constructor or = or destructor, you should imple
 
 Put the definition and implementation together in the header file because they are needed to compile the program.
 Template works with types as required by the user.
+
+# Function Pointers
+
+In C++11, lambda expressions are a good alternative to function pointers.
+The keyword 'virtual' signifies creation of a vtable of function pointers.
