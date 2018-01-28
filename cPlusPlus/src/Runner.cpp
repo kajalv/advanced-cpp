@@ -60,6 +60,7 @@ void runAll()
 	runComplexNumbers();
 	runUsingTemplates();
 	runFunctionPointers();
+	runDetailedExampleFunctionPointers();
 
 	getchar();
 }
