@@ -20,3 +20,10 @@ private:
 	T m_obj;
 	K m_val;
 };
+
+// template function
+template <typename T> // class or typename - both are valid, both can be used
+void display(T n)
+{
+	cout << n << endl;
+}
