@@ -20,6 +20,7 @@
 #include "AssignmentOperator.h"
 #include "InsertionOperator.h"
 #include "ComplexNumber.h"
+#include "UsingTemplates.h"
 
 int main()
 {
@@ -56,6 +57,7 @@ void runAll()
 	runAssignmentOpOverload();
 	runInsertionOpOverload();
 	runComplexNumbers();
+	runUsingTemplates();
 
 	getchar();
 }

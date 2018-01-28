@@ -173,6 +173,7 @@
     <ClCompile Include="src\stl\TwoDimVectors.cpp" />
     <ClCompile Include="src\stl\Vectors.cpp" />
     <ClCompile Include="src\stl\VectorsMemory.cpp" />
+    <ClCompile Include="src\templates\UsingTemplates.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="headers\AssignmentOperator.h" />
@@ -195,7 +196,9 @@
     <ClInclude Include="headers\SortVectors.h" />
     <ClInclude Include="headers\StacksAndQueues.h" />
     <ClInclude Include="headers\SubclassExceptions.h" />
+    <ClInclude Include="headers\Templates.h" />
     <ClInclude Include="headers\TwoDimVectors.h" />
+    <ClInclude Include="headers\UsingTemplates.h" />
     <ClInclude Include="headers\Vectors.h" />
     <ClInclude Include="headers\VectorsMemory.h" />
   </ItemGroup>

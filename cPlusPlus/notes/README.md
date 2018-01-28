@@ -31,3 +31,8 @@ Deque (pronounced deck) - double ended queue, can push to front as well as back
 # Rule of Three
 
 If you define any one of a copy constructor or = or destructor, you should implement all three.
+
+# Templates
+
+Put the definition and implementation together in the header file because they are needed to compile the program.
+Template works with types as required by the user.
