@@ -27,3 +27,24 @@ void display(T n)
 {
 	cout << n << endl;
 }
+
+// template function to demonstrate type inference with overloaded functions and what can happen if you do not specify the type
+template <typename T> // class or typename - both are valid, both can be used
+void showMe(T n)
+{
+	cout << "Template version: " << n << endl;
+}
+
+void showMe(int n)
+{
+	cout << "Non-template version: " << n << endl;
+}
+
+// template function that will not compile unless <> is specified
+template <typename T>
+void iNeedAType() // no argument. So can't infer the type - it has to be specified.
+{
+	cout << T() << endl;
+
+	// if no type: no matching overloaded found, and could not deduce template argument for 'T'
+}
