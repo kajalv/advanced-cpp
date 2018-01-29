@@ -23,6 +23,7 @@
 #include "UsingTemplates.h"
 #include "FunctionPointers.h"
 #include "SlicingPoly.h"
+#include "AbstractPureVirtual.h"
 
 int main()
 {
@@ -63,6 +64,7 @@ void runAll()
 	runFunctionPointers();
 	runDetailedExampleFunctionPointers();
 	runSlicingPoly();
+	runAbstractVirtual();
 
 	getchar();
 }

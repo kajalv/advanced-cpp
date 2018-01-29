@@ -157,6 +157,7 @@
     <ClCompile Include="src\exceptions\Exceptions.cpp" />
     <ClCompile Include="src\files\ParseFile.cpp" />
     <ClCompile Include="src\files\ReadFile.cpp" />
+    <ClCompile Include="src\functions\AbstractPureVirtual.cpp" />
     <ClCompile Include="src\functions\FunctionPointers.cpp" />
     <ClCompile Include="src\functions\SlicingPoly.cpp" />
     <ClCompile Include="src\operators\AssignmentOperator.cpp" />
@@ -178,6 +179,7 @@
     <ClCompile Include="src\templates\UsingTemplates.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="headers\AbstractPureVirtual.h" />
     <ClInclude Include="headers\AssignmentOperator.h" />
     <ClInclude Include="headers\BinaryFileAndPadding.h" />
     <ClInclude Include="headers\ComplexNumber.h" />

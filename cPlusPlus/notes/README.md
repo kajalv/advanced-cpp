@@ -41,3 +41,8 @@ Template works with types as required by the user.
 
 In C++11, lambda expressions are a good alternative to function pointers.
 The keyword 'virtual' signifies creation of a vtable of function pointers.
+
+# Abstract Classes 
+
+Cannot create an array of an abstract class, because the constructor needs to run.
+But we could create an array of pointers to the abstract class.
