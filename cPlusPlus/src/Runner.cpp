@@ -22,6 +22,7 @@
 #include "ComplexNumber.h"
 #include "UsingTemplates.h"
 #include "FunctionPointers.h"
+#include "SlicingPoly.h"
 
 int main()
 {
@@ -61,6 +62,7 @@ void runAll()
 	runUsingTemplates();
 	runFunctionPointers();
 	runDetailedExampleFunctionPointers();
+	runSlicingPoly();
 
 	getchar();
 }

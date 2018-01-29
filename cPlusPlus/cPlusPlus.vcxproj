@@ -158,6 +158,7 @@
     <ClCompile Include="src\files\ParseFile.cpp" />
     <ClCompile Include="src\files\ReadFile.cpp" />
     <ClCompile Include="src\functions\FunctionPointers.cpp" />
+    <ClCompile Include="src\functions\SlicingPoly.cpp" />
     <ClCompile Include="src\operators\AssignmentOperator.cpp" />
     <ClCompile Include="src\operators\ComplexNumber.cpp" />
     <ClCompile Include="src\operators\InsertionOperator.cpp" />
@@ -195,6 +196,7 @@
     <ClInclude Include="headers\ReadFile.h" />
     <ClInclude Include="headers\Runner.h" />
     <ClInclude Include="headers\Set.h" />
+    <ClInclude Include="headers\SlicingPoly.h" />
     <ClInclude Include="headers\SortVectors.h" />
     <ClInclude Include="headers\StacksAndQueues.h" />
     <ClInclude Include="headers\SubclassExceptions.h" />

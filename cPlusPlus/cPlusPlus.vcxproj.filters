@@ -93,6 +93,9 @@
     <ClInclude Include="headers\FunctionPointers.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="headers\SlicingPoly.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Runner.cpp">
@@ -165,6 +168,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\functions\FunctionPointers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\functions\SlicingPoly.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
