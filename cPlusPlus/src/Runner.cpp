@@ -25,6 +25,7 @@
 #include "SlicingPoly.h"
 #include "AbstractPureVirtual.h"
 #include "Functors.h"
+#include "TypesMangling.h"
 
 int main()
 {
@@ -67,6 +68,7 @@ void runAll()
 	runSlicingPoly();
 	runAbstractVirtual();
 	runFunctors();
+	runTypesMangling();
 
 	getchar();
 }

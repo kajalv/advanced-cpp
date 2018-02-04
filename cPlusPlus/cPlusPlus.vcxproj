@@ -151,6 +151,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\cpp11\TypesMangling.cpp" />
     <ClCompile Include="src\files\BinaryFileAndPadding.cpp" />
     <ClCompile Include="src\files\CreateFile.cpp" />
     <ClCompile Include="src\exceptions\DerivedException.cpp" />
@@ -206,6 +207,7 @@
     <ClInclude Include="headers\SubclassExceptions.h" />
     <ClInclude Include="headers\Templates.h" />
     <ClInclude Include="headers\TwoDimVectors.h" />
+    <ClInclude Include="headers\TypesMangling.h" />
     <ClInclude Include="headers\UsingTemplates.h" />
     <ClInclude Include="headers\Vectors.h" />
     <ClInclude Include="headers\VectorsMemory.h" />
