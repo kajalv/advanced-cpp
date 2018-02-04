@@ -46,3 +46,8 @@ The keyword 'virtual' signifies creation of a vtable of function pointers.
 
 Cannot create an array of an abstract class, because the constructor needs to run.
 But we could create an array of pointers to the abstract class.
+
+# Functors 
+
+Alternative to function pointers. Pass blocks of code around.
+But there are some things you can do with functors that you cannot do with function pointers, and vice versa.

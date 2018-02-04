@@ -159,6 +159,7 @@
     <ClCompile Include="src\files\ReadFile.cpp" />
     <ClCompile Include="src\functions\AbstractPureVirtual.cpp" />
     <ClCompile Include="src\functions\FunctionPointers.cpp" />
+    <ClCompile Include="src\functions\Functors.cpp" />
     <ClCompile Include="src\functions\SlicingPoly.cpp" />
     <ClCompile Include="src\operators\AssignmentOperator.cpp" />
     <ClCompile Include="src\operators\ComplexNumber.cpp" />
@@ -188,6 +189,7 @@
     <ClInclude Include="headers\DerivedException.h" />
     <ClInclude Include="headers\Exceptions.h" />
     <ClInclude Include="headers\FunctionPointers.h" />
+    <ClInclude Include="headers\Functors.h" />
     <ClInclude Include="headers\InsertionOperator.h" />
     <ClInclude Include="headers\List.h" />
     <ClInclude Include="headers\MapCustomKey.h" />
