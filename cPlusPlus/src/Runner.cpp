@@ -26,6 +26,7 @@
 #include "AbstractPureVirtual.h"
 #include "Functors.h"
 #include "TypesMangling.h"
+#include "AutoKeyword.h"
 
 int main()
 {
@@ -69,6 +70,7 @@ void runAll()
 	runAbstractVirtual();
 	runFunctors();
 	runTypesMangling();
+	runAuto();
 
 	getchar();
 }

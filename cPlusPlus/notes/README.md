@@ -51,3 +51,9 @@ But we could create an array of pointers to the abstract class.
 
 Alternative to function pointers. Pass blocks of code around.
 But there are some things you can do with functors that you cannot do with function pointers, and vice versa.
+
+# Storage Class Specifiers
+
+auto is the default. Normally don't need to specify it.
+
+auto and trailing return types need a deep-dive!
