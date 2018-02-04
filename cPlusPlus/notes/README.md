@@ -57,3 +57,7 @@ But there are some things you can do with functors that you cannot do with funct
 auto is the default. Normally don't need to specify it.
 
 auto and trailing return types need a deep-dive!
+
+# Range-based for loops
+
+Have used it for arrays and vectors. But, can also be used for characters in a string.
