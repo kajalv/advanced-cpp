@@ -27,6 +27,7 @@
 #include "Functors.h"
 #include "TypesMangling.h"
 #include "AutoKeyword.h"
+#include "NestedTemplateClass.h"
 
 int main()
 {
@@ -71,6 +72,7 @@ void runAll()
 	runFunctors();
 	runTypesMangling();
 	runAuto();
+	runNestedTemplate();
 
 	getchar();
 }

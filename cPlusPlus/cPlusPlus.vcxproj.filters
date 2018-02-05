@@ -108,6 +108,12 @@
     <ClInclude Include="headers\AutoKeyword.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="headers\NestedTemplateClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="headers\NestedTemplates.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Runner.cpp">
@@ -195,6 +201,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\cpp11\AutoKeyword.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp11\NestedTemplateClass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
