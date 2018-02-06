@@ -30,6 +30,7 @@
 #include "NestedTemplateClass.h"
 #include "Initializations.h"
 #include "InitializerList.h"
+#include "ObjectInitDefaultDelete.h"
 
 int main()
 {
@@ -76,6 +77,7 @@ void runAll()
 	runAuto();
 	runNestedTemplate();
 	runInit();
+	runObjectInitDefaultDelete();
 
 	getchar();
 }

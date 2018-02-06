@@ -155,6 +155,7 @@
     <ClCompile Include="src\cpp11\Initializations.cpp" />
     <ClCompile Include="src\cpp11\InitializerList.cpp" />
     <ClCompile Include="src\cpp11\NestedTemplateClass.cpp" />
+    <ClCompile Include="src\cpp11\ObjectInitDefaultDelete.cpp" />
     <ClCompile Include="src\cpp11\TypesMangling.cpp" />
     <ClCompile Include="src\files\BinaryFileAndPadding.cpp" />
     <ClCompile Include="src\files\CreateFile.cpp" />
@@ -206,6 +207,7 @@
     <ClInclude Include="headers\MultiMap.h" />
     <ClInclude Include="headers\NestedTemplateClass.h" />
     <ClInclude Include="headers\NestedTemplates.h" />
+    <ClInclude Include="headers\ObjectInitDefaultDelete.h" />
     <ClInclude Include="headers\ParseFile.h" />
     <ClInclude Include="headers\ReadFile.h" />
     <ClInclude Include="headers\Runner.h" />
