@@ -28,6 +28,7 @@
 #include "TypesMangling.h"
 #include "AutoKeyword.h"
 #include "NestedTemplateClass.h"
+#include "Initializations.h"
 
 int main()
 {
@@ -73,6 +74,7 @@ void runAll()
 	runTypesMangling();
 	runAuto();
 	runNestedTemplate();
+	runInit();
 
 	getchar();
 }

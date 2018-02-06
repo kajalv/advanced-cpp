@@ -114,6 +114,9 @@
     <ClInclude Include="headers\NestedTemplates.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="headers\Initializations.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Runner.cpp">
@@ -204,6 +207,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\cpp11\NestedTemplateClass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp11\Initializations.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -61,3 +61,7 @@ auto and trailing return types need a deep-dive!
 # Range-based for loops
 
 Have used it for arrays and vectors. But, can also be used for characters in a string.
+
+# Notes 
+
+NULL is not a keyword. C++11 has nullptr type.
