@@ -117,6 +117,9 @@
     <ClInclude Include="headers\Initializations.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="headers\InitializerList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Runner.cpp">
@@ -210,6 +213,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\cpp11\Initializations.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp11\InitializerList.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

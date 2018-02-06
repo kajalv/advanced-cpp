@@ -29,6 +29,7 @@
 #include "AutoKeyword.h"
 #include "NestedTemplateClass.h"
 #include "Initializations.h"
+#include "InitializerList.h"
 
 int main()
 {

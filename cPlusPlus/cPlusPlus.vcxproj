@@ -153,6 +153,7 @@
   <ItemGroup>
     <ClCompile Include="src\cpp11\AutoKeyword.cpp" />
     <ClCompile Include="src\cpp11\Initializations.cpp" />
+    <ClCompile Include="src\cpp11\InitializerList.cpp" />
     <ClCompile Include="src\cpp11\NestedTemplateClass.cpp" />
     <ClCompile Include="src\cpp11\TypesMangling.cpp" />
     <ClCompile Include="src\files\BinaryFileAndPadding.cpp" />
@@ -196,6 +197,7 @@
     <ClInclude Include="headers\FunctionPointers.h" />
     <ClInclude Include="headers\Functors.h" />
     <ClInclude Include="headers\Initializations.h" />
+    <ClInclude Include="headers\InitializerList.h" />
     <ClInclude Include="headers\InsertionOperator.h" />
     <ClInclude Include="headers\List.h" />
     <ClInclude Include="headers\MapCustomKey.h" />
