@@ -31,6 +31,7 @@
 #include "Initializations.h"
 #include "InitializerList.h"
 #include "ObjectInitDefaultDelete.h"
+#include "Lambdas.h"
 
 int main()
 {
@@ -78,6 +79,7 @@ void runAll()
 	runNestedTemplate();
 	runInit();
 	runObjectInitDefaultDelete();
+	runLambdas();
 
 	getchar();
 }

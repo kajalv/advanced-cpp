@@ -123,6 +123,9 @@
     <ClInclude Include="headers\ObjectInitDefaultDelete.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="headers\Lambdas.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Runner.cpp">
@@ -222,6 +225,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\cpp11\ObjectInitDefaultDelete.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp11\Lambdas.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
