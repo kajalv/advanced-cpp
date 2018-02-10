@@ -33,6 +33,7 @@
 #include "ObjectInitDefaultDelete.h"
 #include "Lambdas.h"
 #include "StandardFunction.h"
+#include "DelegatingConstructor.h"
 
 int main()
 {
@@ -82,6 +83,7 @@ void runAll()
 	runObjectInitDefaultDelete();
 	runLambdas();
 	runStdFunc();
+	runDelegatingConstructor();
 
 	getchar();
 }
