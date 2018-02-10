@@ -32,6 +32,7 @@
 #include "InitializerList.h"
 #include "ObjectInitDefaultDelete.h"
 #include "Lambdas.h"
+#include "StandardFunction.h"
 
 int main()
 {
@@ -80,6 +81,7 @@ void runAll()
 	runInit();
 	runObjectInitDefaultDelete();
 	runLambdas();
+	runStdFunc();
 
 	getchar();
 }

@@ -14,5 +14,6 @@
 #include <algorithm>
 #include <typeinfo>
 #include <initializer_list>
+#include <functional> // needed for standard function
 
 using namespace std;

@@ -157,6 +157,7 @@
     <ClCompile Include="src\cpp11\Lambdas.cpp" />
     <ClCompile Include="src\cpp11\NestedTemplateClass.cpp" />
     <ClCompile Include="src\cpp11\ObjectInitDefaultDelete.cpp" />
+    <ClCompile Include="src\cpp11\StandardFunction.cpp" />
     <ClCompile Include="src\cpp11\TypesMangling.cpp" />
     <ClCompile Include="src\files\BinaryFileAndPadding.cpp" />
     <ClCompile Include="src\files\CreateFile.cpp" />
@@ -217,6 +218,7 @@
     <ClInclude Include="headers\SlicingPoly.h" />
     <ClInclude Include="headers\SortVectors.h" />
     <ClInclude Include="headers\StacksAndQueues.h" />
+    <ClInclude Include="headers\StandardFunction.h" />
     <ClInclude Include="headers\SubclassExceptions.h" />
     <ClInclude Include="headers\Templates.h" />
     <ClInclude Include="headers\TwoDimVectors.h" />
