@@ -153,6 +153,7 @@
   <ItemGroup>
     <ClCompile Include="src\cpp11\AutoKeyword.cpp" />
     <ClCompile Include="src\cpp11\DelegatingConstructor.cpp" />
+    <ClCompile Include="src\cpp11\Elision.cpp" />
     <ClCompile Include="src\cpp11\Initializations.cpp" />
     <ClCompile Include="src\cpp11\InitializerList.cpp" />
     <ClCompile Include="src\cpp11\Lambdas.cpp" />
@@ -198,6 +199,7 @@
     <ClInclude Include="headers\CreateFile.h" />
     <ClInclude Include="headers\DelegatingConstructor.h" />
     <ClInclude Include="headers\DerivedException.h" />
+    <ClInclude Include="headers\Elision.h" />
     <ClInclude Include="headers\Exceptions.h" />
     <ClInclude Include="headers\FunctionPointers.h" />
     <ClInclude Include="headers\Functors.h" />

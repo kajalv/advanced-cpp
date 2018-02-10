@@ -34,6 +34,7 @@
 #include "Lambdas.h"
 #include "StandardFunction.h"
 #include "DelegatingConstructor.h"
+#include "Elision.h"
 
 int main()
 {
@@ -84,6 +85,7 @@ void runAll()
 	runLambdas();
 	runStdFunc();
 	runDelegatingConstructor();
+	runElision();
 
 	getchar();
 }
