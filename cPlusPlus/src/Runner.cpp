@@ -35,6 +35,7 @@
 #include "StandardFunction.h"
 #include "DelegatingConstructor.h"
 #include "Elision.h"
+#include "MemoryMgmt.h"
 
 int main()
 {
@@ -86,6 +87,7 @@ void runAll()
 	runStdFunc();
 	runDelegatingConstructor();
 	runElision();
+	runMemMgmt();
 
 	getchar();
 }
