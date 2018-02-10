@@ -129,10 +129,27 @@ void runCaptureThis()
 	tester.run();
 }
 
+void runMutableLambdas()
+{
+	int cats = 5;
+
+	// When you capture a variable in a lambda expression, you cannot modify its value unless you specify 'mutable'
+	// The variable is still captured by value this way, so any changes will not be reflected back
+
+	[cats]() mutable
+	{
+		cats = 8;
+		cout << cats << endl;
+	}();
+
+	cout << cats << endl;
+}
+
 void runLambdas()
 {
 	runBasic();
 	runParamsAndReturn();
 	runCapture();
 	runCaptureThis();
+	runMutableLambdas();
 }
