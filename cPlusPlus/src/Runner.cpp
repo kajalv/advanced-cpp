@@ -36,6 +36,7 @@
 #include "DelegatingConstructor.h"
 #include "Elision.h"
 #include "MemoryMgmt.h"
+#include "MoveConstructors.h"
 
 int main()
 {
@@ -88,6 +89,7 @@ void runAll()
 	runDelegatingConstructor();
 	runElision();
 	runMemMgmt();
+	runMoveConstructors();
 
 	getchar();
 }

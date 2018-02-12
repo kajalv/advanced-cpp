@@ -158,6 +158,7 @@
     <ClCompile Include="src\cpp11\InitializerList.cpp" />
     <ClCompile Include="src\cpp11\Lambdas.cpp" />
     <ClCompile Include="src\cpp11\MemoryMgmt.cpp" />
+    <ClCompile Include="src\cpp11\MoveConstructors.cpp" />
     <ClCompile Include="src\cpp11\NestedTemplateClass.cpp" />
     <ClCompile Include="src\cpp11\ObjectInitDefaultDelete.cpp" />
     <ClCompile Include="src\cpp11\StandardFunction.cpp" />
@@ -213,6 +214,7 @@
     <ClInclude Include="headers\MapCustomValue.h" />
     <ClInclude Include="headers\Maps.h" />
     <ClInclude Include="headers\MemoryMgmt.h" />
+    <ClInclude Include="headers\MoveConstructors.h" />
     <ClInclude Include="headers\MultiMap.h" />
     <ClInclude Include="headers\NestedTemplateClass.h" />
     <ClInclude Include="headers\NestedTemplates.h" />
