@@ -73,7 +73,7 @@ TestMem getTest()
 	return TestMem();
 }
 
-void runMemMgmt()
+void runLvaluesAndRvalues()
 {
 	TestMem test1 = getTest();
 
@@ -98,6 +98,16 @@ void runMemMgmt()
 	//int *pValue4 = &value1++; // postfix ++ operator creates a temporary value, so it is an rvalue, unlike prefix ++ operator
 
 	// int *s = &(7 + value1);
+}
+
+void runLvalueReferences()
+{
+	TestMem test1 = getTest();
+
+	cout << test1 << endl;
+
+	vector<TestMem> vec;
+	vec.push_back(TestMem());
 
 	// 2 - Lvalue references
 	TestMem &rTest1 = test1; // lvalue reference - the usual c++98 way of creating a 'reference'
@@ -108,4 +118,56 @@ void runMemMgmt()
 	// does so by extending the lifetime of the temporary object, to a point where the const lvalue reference goes out of scope
 
 	TestMem test2(TestMem(1)); // const lvalue reference in copy constructor - can bind to an rvalue
+}
+
+void checkWhich(const TestMem &value)
+{
+	cout << "lValue function!" << endl;
+}
+
+void checkWhich(TestMem &&value)
+{
+	cout << "rValue function!" << endl;
+}
+
+void intTest(const int &value)
+{
+	cout << "lValue int func!" << endl;
+}
+
+void intTest(int &&value)
+{
+	cout << "rValue int func!" << endl;
+}
+
+void runRvalueReferences()
+{
+	TestMem test1 = getTest();
+
+	cout << test1 << endl;
+
+	vector<TestMem> vec;
+	vec.push_back(TestMem());
+
+	TestMem &ltest1 = test1;
+
+	TestMem &&rtest1 = getTest();
+	// rvalue references give us a way to differentiate between temp values and non-temp values
+	// i.e. between lvalues and rvalues
+	// example using checkWhich below
+
+	checkWhich(test1); // l
+	checkWhich(getTest()); // r
+	checkWhich(TestMem()); // r
+
+	int num = 4;
+	intTest(++num); // l
+	intTest(num++); // r
+}
+
+void runMemMgmt()
+{
+	runLvaluesAndRvalues();
+	runLvalueReferences();
+	runRvalueReferences();
 }
