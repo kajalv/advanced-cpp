@@ -82,7 +82,7 @@ void runMemMgmt()
 	vector<TestMem> vec;
 	vec.push_back(TestMem());
 
-	// lvalues and rvalues
+	// 1 - lvalues and rvalues
 	// lvalue - anything we can take the address of
 	int value1 = 7;
 
@@ -98,4 +98,14 @@ void runMemMgmt()
 	//int *pValue4 = &value1++; // postfix ++ operator creates a temporary value, so it is an rvalue, unlike prefix ++ operator
 
 	// int *s = &(7 + value1);
+
+	// 2 - Lvalue references
+	TestMem &rTest1 = test1; // lvalue reference - the usual c++98 way of creating a 'reference'
+
+	//Test &rTest2 = getTest(); // lvalue reference cannot bind to rvalue
+
+	const TestMem &rTest2 = getTest(); // const lvalue references can bind to rvalues!
+	// does so by extending the lifetime of the temporary object, to a point where the const lvalue reference goes out of scope
+
+	TestMem test2(TestMem(1)); // const lvalue reference in copy constructor - can bind to an rvalue
 }
