@@ -30,7 +30,7 @@ Deque (pronounced deck) - double ended queue, can push to front as well as back
 
 # Rule of Three
 
-If you define any one of a copy constructor or = or destructor, you should implement all three.
+If you define any one of a copy constructor or = (assignment operator) or destructor, you should implement all three.
 
 # Templates
 

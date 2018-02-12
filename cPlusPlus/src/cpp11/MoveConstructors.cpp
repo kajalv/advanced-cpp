@@ -50,6 +50,19 @@ public:
 		return *this;
 	}
 
+	TestMove &operator=(TestMove &&other)
+	{
+		cout << "Move assignment" << endl;
+
+		delete[] _pBuffer; // in move assignment operator, need to delete memory that's already been allocated
+		// this is the difference from move constructor
+
+		_pBuffer = other._pBuffer;
+		other._pBuffer = nullptr;
+
+		return *this;
+	}
+
 	~TestMove()
 	{
 		delete[] _pBuffer;
@@ -73,4 +86,7 @@ void runMoveConstructors()
 {
 	vector<TestMove> vec;
 	vec.push_back(TestMove()); // move constructor
+
+	TestMove test;
+	test = TestMove(); // move assignment operator
 }
