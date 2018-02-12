@@ -81,4 +81,21 @@ void runMemMgmt()
 
 	vector<TestMem> vec;
 	vec.push_back(TestMem());
+
+	// lvalues and rvalues
+	// lvalue - anything we can take the address of
+	int value1 = 7;
+
+	int *pValue1 = &value1;
+	//int *pValue2 = &7;
+
+	TestMem *pTest1 = &test1;
+	//Test *pTest2 = &getTest(); // getTest() returns a temporary object, so it is an rvalue, not an lvalue
+
+	int *pValue3 = &++value1;
+	cout << *pValue3 << endl;
+
+	//int *pValue4 = &value1++; // postfix ++ operator creates a temporary value, so it is an rvalue, unlike prefix ++ operator
+
+	// int *s = &(7 + value1);
 }
