@@ -141,6 +141,9 @@
     <ClInclude Include="headers\MoveConstructors.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="headers\StaticCast.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Runner.cpp">
@@ -258,6 +261,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\cpp11\MoveConstructors.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp11\StaticCast.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
