@@ -15,5 +15,6 @@
 #include <typeinfo>
 #include <initializer_list>
 #include <functional> // needed for standard function
+#include <memory> // needed for auto pointers
 
 using namespace std;

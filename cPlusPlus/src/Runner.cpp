@@ -40,6 +40,7 @@
 #include "Casts.h"
 #include "PerfectForwarding.h"
 #include "Bind.h"
+#include "SmartPointers.h"
 
 int main()
 {
@@ -96,6 +97,7 @@ void runAll()
 	runCasts();
 	runPerfectForwarding();
 	runBind();
+	runAutoPointers();
 
 	getchar();
 }

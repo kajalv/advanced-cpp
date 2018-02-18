@@ -28,4 +28,8 @@ void runTypesMangling()
 	decltype(value) age = 25;
 	cout << typeid(age).name() << endl;
 	cout << age << endl;
+
+	// remove unreferenced variable warning
+	value = 2;
+	cout << value << endl;
 }

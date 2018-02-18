@@ -62,6 +62,12 @@ auto and trailing return types need a deep-dive!
 
 Have used it for arrays and vectors. But, can also be used for characters in a string.
 
+# Smart pointers 
+
+Unique pointers are "smart pointers" which behaves like normal pointers but handle the deallocation of memory on their own.
+Prior to C++11, there was auto_ptr which is similar to unique_ptr. But now it is deprecated.
+Also, we cannot use auto_ptr on arrays but we can use unique_ptr on arrays.
+
 # Notes 
 
 NULL is not a keyword. C++11 has nullptr type.
