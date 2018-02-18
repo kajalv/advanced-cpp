@@ -152,7 +152,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\cpp11\AutoKeyword.cpp" />
-    <ClCompile Include="src\cpp11\StaticCast.cpp" />
+    <ClCompile Include="src\cpp11\Casts.cpp" />
     <ClCompile Include="src\cpp11\DelegatingConstructor.cpp" />
     <ClCompile Include="src\cpp11\Elision.cpp" />
     <ClCompile Include="src\cpp11\Initializations.cpp" />
@@ -197,7 +197,7 @@
     <ClInclude Include="headers\AssignmentOperator.h" />
     <ClInclude Include="headers\AutoKeyword.h" />
     <ClInclude Include="headers\BinaryFileAndPadding.h" />
-    <ClInclude Include="headers\StaticCast.h" />
+    <ClInclude Include="headers\Casts.h" />
     <ClInclude Include="headers\ComplexNumber.h" />
     <ClInclude Include="headers\cppincl.h" />
     <ClInclude Include="headers\CreateFile.h" />

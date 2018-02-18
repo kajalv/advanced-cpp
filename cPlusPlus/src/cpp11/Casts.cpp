@@ -1,9 +1,9 @@
-#include "StaticCast.h"
+#include "Casts.h"
 
 class ParentClass
 {
 public:
-	void speak()
+	virtual void speak() // virtual makes ParentClass polymorphic
 	{
 		cout << "Parent speaking" << endl;
 	}
@@ -39,4 +39,31 @@ void runStaticCast()
 	ParentClass &&p1 = ParentClass();
 	ParentClass &&p = static_cast<ParentClass &&>(parent); // set rvalue reference to refer to an lvalue
 	p.speak();
+}
+
+void runDynamicCast()
+{
+	ParentClass parent;
+	BrotherClass brother;
+
+	ParentClass *ppb = &brother;
+	BrotherClass *pbb = dynamic_cast<BrotherClass *>(ppb); // cast back to subclass type
+	// RTTI must be turned on for the above statement to work
+	// dynamic cast checks types at runtime
+	// error: ParentClass not a polymorphic type - make the functions virtual
+
+	if (pbb == nullptr) // nullptr for invalid cast
+	{
+		cout << "Invalid cast" << endl;
+	}
+	else
+	{
+		cout << pbb << endl;
+	}
+}
+
+void runCasts()
+{
+	runStaticCast();
+	runDynamicCast();
 }

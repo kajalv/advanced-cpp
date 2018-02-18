@@ -2,4 +2,4 @@
 
 #include "cppincl.h"
 
-void runStaticCast();
+void runCasts();

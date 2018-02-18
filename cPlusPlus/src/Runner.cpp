@@ -37,7 +37,7 @@
 #include "Elision.h"
 #include "MemoryMgmt.h"
 #include "MoveConstructors.h"
-#include "StaticCast.h"
+#include "Casts.h"
 
 int main()
 {
@@ -91,7 +91,7 @@ void runAll()
 	runElision();
 	runMemMgmt();
 	runMoveConstructors();
-	runStaticCast();
+	runCasts();
 
 	getchar();
 }
