@@ -151,6 +151,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\bonus\MultipleInheritance.cpp" />
     <ClCompile Include="src\cpp11\AutoKeyword.cpp" />
     <ClCompile Include="src\cpp11\SharedPointers.cpp" />
     <ClCompile Include="src\cpp11\SmartPointers.cpp" />
@@ -200,6 +201,7 @@
     <ClInclude Include="headers\AbstractPureVirtual.h" />
     <ClInclude Include="headers\AssignmentOperator.h" />
     <ClInclude Include="headers\AutoKeyword.h" />
+    <ClInclude Include="headers\MultipleInheritance.h" />
     <ClInclude Include="headers\SharedPointers.h" />
     <ClInclude Include="headers\SmartPointers.h" />
     <ClInclude Include="headers\BinaryFileAndPadding.h" />

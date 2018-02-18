@@ -42,6 +42,7 @@
 #include "Bind.h"
 #include "SmartPointers.h"
 #include "SharedPointers.h"
+#include "MultipleInheritance.h"
 
 int main()
 {
@@ -100,6 +101,7 @@ void runAll()
 	runBind();
 	runSmartPointers();
 	runSharedPointers();
+	runMultipleInheritance();
 
 	getchar();
 }
