@@ -147,6 +147,9 @@
     <ClInclude Include="headers\PerfectForwarding.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="headers\Bind.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Runner.cpp">
@@ -270,6 +273,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\cpp11\PerfectForwarding.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpp11\Bind.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

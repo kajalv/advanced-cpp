@@ -39,6 +39,7 @@
 #include "MoveConstructors.h"
 #include "Casts.h"
 #include "PerfectForwarding.h"
+#include "Bind.h"
 
 int main()
 {
@@ -94,6 +95,7 @@ void runAll()
 	runMoveConstructors();
 	runCasts();
 	runPerfectForwarding();
+	runBind();
 
 	getchar();
 }
