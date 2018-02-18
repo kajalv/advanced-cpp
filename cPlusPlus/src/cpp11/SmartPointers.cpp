@@ -34,7 +34,7 @@ public:
 	}
 };
 
-void runAutoPointers()
+void runSmartPointers()
 {
 	// simple int example
 	unique_ptr<int> pointerTestInt(new int);

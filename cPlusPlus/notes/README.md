@@ -68,6 +68,11 @@ Unique pointers are "smart pointers" which behaves like normal pointers but hand
 Prior to C++11, there was auto_ptr which is similar to unique_ptr. But now it is deprecated.
 Also, we cannot use auto_ptr on arrays but we can use unique_ptr on arrays.
 
+# Shared pointers 
+
+Similar to smart, but they don't delete the memory associated with the objects until all pointers that point at that object have gone out of scope.
+Cannot point at arrays at the moment, may change in future.
+
 # Notes 
 
 NULL is not a keyword. C++11 has nullptr type.

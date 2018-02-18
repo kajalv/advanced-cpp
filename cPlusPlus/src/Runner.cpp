@@ -41,6 +41,7 @@
 #include "PerfectForwarding.h"
 #include "Bind.h"
 #include "SmartPointers.h"
+#include "SharedPointers.h"
 
 int main()
 {
@@ -97,7 +98,8 @@ void runAll()
 	runCasts();
 	runPerfectForwarding();
 	runBind();
-	runAutoPointers();
+	runSmartPointers();
+	runSharedPointers();
 
 	getchar();
 }
