@@ -62,8 +62,31 @@ void runDynamicCast()
 	}
 }
 
+void runReinterpretCast()
+{
+	ParentClass parent;
+	BrotherClass brother;
+	SisterClass sister;
+
+	ParentClass *ppb = &brother;
+	SisterClass *pbb = reinterpret_cast<SisterClass *>(ppb); // reinterpret the brother object as a sister
+	// reinterpret cast has even less checking than static cast
+	// can usually cast anything to anything
+	// best to avoid, unless dealing with a really badly written API
+
+	if (pbb == nullptr)
+	{
+		cout << "Invalid cast" << endl;
+	}
+	else
+	{
+		cout << pbb << endl;
+	}
+}
+
 void runCasts()
 {
 	runStaticCast();
 	runDynamicCast();
+	runReinterpretCast();
 }
