@@ -38,6 +38,7 @@
 #include "MemoryMgmt.h"
 #include "MoveConstructors.h"
 #include "Casts.h"
+#include "PerfectForwarding.h"
 
 int main()
 {
@@ -92,6 +93,7 @@ void runAll()
 	runMemMgmt();
 	runMoveConstructors();
 	runCasts();
+	runPerfectForwarding();
 
 	getchar();
 }

@@ -65,3 +65,8 @@ Have used it for arrays and vectors. But, can also be used for characters in a s
 # Notes 
 
 NULL is not a keyword. C++11 has nullptr type.
+
+# Things to note or read about 
+
+- Reference collapsing
+- Name mangling
