@@ -27,6 +27,12 @@ s.clear()
 Checking if an ostringstream is empty (has no content):
 bool isEmpty = (s.tellp() == 0); // Similar to checking the 'size'
 
+# Bitset
+
+Decimal to binary conversion and vice versa (string intermediate)
+std::string binary = std::bitset<8>(128).to_string(); //8/16/32 bit
+unsigned long decimal = std::bitset<8>(binary).to_ulong(); //or uint32_t decimal;
+
 # Notes on Copy Constructor
 
 In a custom object - the assignment operator performs a shallow copy. This becomes a problem when there are pointers.
