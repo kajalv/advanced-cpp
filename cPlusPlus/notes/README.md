@@ -18,6 +18,15 @@ For example, if the exception is going to be displayed to the user, there is no 
 which will be meaningless to them. Also, if the calling code doesn't know about your exception, throwing std::exception
 will ensure it gets handled.
 
+# String Manipulation
+
+Clearing an ostringstream s - involves clearing the contents as well as resetting all flags (eg. error bits).
+s.str("")
+s.clear()
+
+Checking if an ostringstream is empty (has no content):
+bool isEmpty = (s.tellp() == 0); // Similar to checking the 'size'
+
 # Notes on Copy Constructor
 
 In a custom object - the assignment operator performs a shallow copy. This becomes a problem when there are pointers.
