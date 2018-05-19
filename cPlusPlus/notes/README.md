@@ -102,3 +102,14 @@ NULL is not a keyword. C++11 has nullptr type.
 
 - Reference collapsing
 - Name mangling
+
+# Notes from other resources
+
+New in C++ 11:
+
+- Enum classes over plain enums - because of type safety: https://stackoverflow.com/questions/18335861/why-is-enum-class-preferred-over-plain-enum
+- STL - has containers, iterators, and algorithms
+- Some new libraries in C++11 - regex, thread, unordered_map, array, forward_list
+- Iterator categories - forward, bidirectional, random
+- Overloading ostream& operator<< requires it to be a friend class
+- C++ auto feature
