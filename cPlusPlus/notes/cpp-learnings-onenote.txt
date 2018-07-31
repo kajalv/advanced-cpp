@@ -33,3 +33,100 @@ Inheritance
 	- No further inheritance: final. class NAME final:public SUPER.
 	- const method - doesn't change the instance. Public inheritance helps in subtyping - polymorphism. Initializer list. Reference - alias.
 	- Virtual functions - dynamic dispatch, go to a vftable and pick the right function. virtual persists in all derived classes in the heirarchy so is needed only once. Only non-static member functions. Constructors can't be virtual (factory design pattern can produce behaviour that's like virtual constructor), destructor can.
+
+
+
+
+
+	- Runtime - VS platform toolset
+		○ Allocation and deallocation should happen in same runtime, either by using same VS2015 or write alloc and dealloc functions exposed in the dll for use
+		○ Version of C++?
+	- wstring
+		○ char is 1 byte, wchar_t 2 bytes - wchar_t is needed for unicode. std::string is basic_string<char>, std::wstring is basic_string<wchar_t>.
+		○ TCHAR - if unicode is defined, then TCHAR is wchar_t, else TCHAR is char. So just with unicode flag, we can make it wchar_t (this is microsoft defined but not cross platform). typedef basic_string<TCHAR> tstring.Cross platform - #if unicode typedef basic_string<wchar_t> tstring else typedef basic_string<char> tstring.
+		○ L"" converts to wchar
+	- Dependencies (proj)
+		○ Compare to SolutionDir
+		○ Boost - we need to install it once per system and make environment variables BOOST_TTD_ROOT, BOOST_TTD_LIB. Figure out how to bundle in the project. CMake may be able to do it.
+	- Removing dependencies
+		○ Only JSONHelper needs to know about cpprestsdk. Dependencies are because of adding json.h and web::json::value.To resolve -
+			§ forward declaration with reference/pointer.
+			§ JSONNode.cpp - include json.h
+		○ Keep header file light.
+	- Constructor
+	- Pointers
+	- Naming
+		○ Class members should start with _. Or m_.
+		○ Variable name - start with small letter camel case.
+		○ Function - start with capital letter (need to debate this and fix the standard) and camel case.
+	- UT
+		○ For testing private functions, declare a friend class.
+		○ Debugging = Preprocessor definitions - add _DEBUG. Add the command line arguments in the project to debug 
+		○ Make sure we use #ifdef _DEBUG encapsulated in some neat way, so that the test cases are compiled only in debug mode.
+		○ opencppcoverage - use --sources to monitor which files you want for code coverage. Add in post build command? https://wiki.intuit.com/pages/viewpage.action?spaceKey=TTWin&title=UnitTest%20Framework%20Setup%20and%20Usage
+	- Interfaces
+		○ We need interfaces so we can override the implementation based on the specific object type.
+		○ To make an interface, make a pure virtual function. virtual void func() = 0; =0 forces all derived classes to implement that function otherwise they remain interfaces again. Derived class also has to have the 'virtual' keyword.
+		○ Base class, derived class etc - next sessions
+	- Linking
+	- Documentation
+		○ Add TODO with name if needed
+		○ Use plugin for VC++ VS, called CppTripleSlash
+	- Friend class
+		○ A has private int a. B has a function func(A a) and requires access to a. So declare B as a friend class inside class A - if using public getter/setter not feasible or private function needs to be used. For example - JSend is a friend of JSONNode so that it can use json::value and all the other private functions.
+	- Defaults for class
+		○ Default generated template - constructor (not generated if you define any constructor such as A(var)), copy constructor, operator=, destructor
+		○ Need to define copy constructor A(const A &), operator=, ~A()
+			§ copy constructor : if class A has a pointer variable, the pointer gets copied and both point to the same memory location, so if one goes out of scope there is a dangling pointer.
+			A (const A &obj) {  ptr = new int (*obj.a) } if class A has an int *a. Passed by reference otherwise for call by value, the copy constructor will be called infinite number of times.
+			§ Assignment operator. Check for self assignment a = a.
+			§ Destructor - delete the memory for pointers and then immediately assign to nullptr as a good coding practice.
+	- Initializer list : Copy constructors
+		○ Use this to call constructors of class members, because otherwise there is an overhead in calling the default constructor and copy constructor of the class instead of just one constructor call. Two objects are constructed instead of one, if we use A a = A(). For pointers we still need to call the same way, like A *a = new A();To solve - if you have default constructor, use A a; Parameterized - A a(1); If members have constructors do A() : b(B()) {} instead of A() { b = B() }
+		○ Same logic in function calls (eg. jobdata in runTask). Avoid creation of temp objects and pass a reference if you need to reuse the same object again. If you don't want to modify at all, make it a const reference.
+		○ So should we ever use call by value?
+
+Pointers and Virtual Functions
+
+Virtual functions - create a vtable. Based on type it knows which function to call. Otherwise if you have A *a = new B() and B is derived from A, then by default A's base functions are called. Virtual helps in runtime polymorphism.
+Designing interfaces - Declare a pure virtual function. You can also make destructor pure virtual. Interface should not have data members, ideally.
+
+Pointers - with ref to class members
+	- Function taking pointer argument - take care of freeing up memory.
+	- Function returning pointer - don't return local variable
+	- Buffer overflow
+	- Constructor - initalize pointer to null or new memory. Else junk data
+	- Singleton class
+		○ private: A(), A(const &A) A operator=. m_instance is a static private member. Public static access methods - getInstance(). This is not thread safe
+	- Code readability - public (constructors & ops, static and non static data members, then functions), protected, private (members m_)
+	- Object creation - instead of using pass by value, pass a constant reference and define function as const
+
+
+
+
+COMMON COMPILATION ERRORS
+
+Common compilation errors
+
+	- Not a class or namespace reference: using namespace Intuit::Tax::sok; That's a nasty quirk of the compiler.  When it searches for the precompiled headers, it skips any #includes before stdafx.h. 
+	- BadImageFormatException: Format of the executable (.exe) or library (.dll) is invalid.Copy cpprest files from x86 thirdparty folder to $(OutDir)
+
+Linker errors
+
+	- Use x86
+	- General- $(SolutionDir)..\JSONHelper\ThirdParty\cpprestsdk\lib\native\v140\windesktop\msvcstl\x86\Debug
+	- Input - cpprest140d_2_8.lib
+	- check destructors defined for all classes; Define destructor inline or just export the functions
+	- Static functions and members
+	- Make sure every function has a definition
+	- String: pointer to char array conversion
+	- Looping header files
+	- templates - only in .h, no .cpp
+	- Check project build dependencies
+	- Check linker input - has the necessary libs specified
+
+MS CPP Unit test framework
+
+	- Cppunittestframework - Right click on solution (topmost level) -> add -> new project in SOKRepo\theproject (win32 console application DLL)Set header includes etcRemove precompiled headers option
+	- Failed to set up execution context to run test - related to boost lib directories. Check versionCreate a new boost projectConfigure platform toolsetCheck whether static or dynamic linking, and see if the dll/lib is specified in linker -> inputMake it a console application in linker -> system
+
