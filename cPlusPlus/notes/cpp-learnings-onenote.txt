@@ -1,0 +1,35 @@
+New in C++ 11
+
+	1. Enum classes - preferred over plain enums because of type safety
+https://stackoverflow.com/questions/18335861/why-is-enum-class-preferred-over-plain-enum
+	2. Some new libraries in C++11 STL
+		a. regex, thread,
+		b. containers - unordered_map and set, hashes, array, forward_list
+	3. Overloading ostream& operator<< requires it to be a friend class
+	4. C++ auto feature (variable type deduction)
+	5. Move constructors
+
+STL
+
+Has containers, iterators, and algorithms
+	- Iterators - forward, bidirectional, random
+		○ Weakest - inputiter
+	- Containers - sequential, associative
+		○ ordered maps - underlying data structure is balanced tree (red-black). Compare operation used. O(log n) access. .first, .second.
+		○ unordered - O(1) usually, hash.
+	- Algorithms 
+		○ sort is Quicksort. stable_sort.
+		○ non-mutating: find, find_if, for_each
+		○ mutating: copy
+		○ numerical: accumulate, inner_product
+	- Lambdas
+		○ [](int n) { return n *5.5; } // returns double, implicit, deduced
+		○ [](int n) -> int { return ++n; } // returns int, explicit
+	- Function objects
+		○ Function adapter: bind2nd
+
+Inheritance
+
+	- No further inheritance: final. class NAME final:public SUPER.
+	- const method - doesn't change the instance. Public inheritance helps in subtyping - polymorphism. Initializer list. Reference - alias.
+	- Virtual functions - dynamic dispatch, go to a vftable and pick the right function. virtual persists in all derived classes in the heirarchy so is needed only once. Only non-static member functions. Constructors can't be virtual (factory design pattern can produce behaviour that's like virtual constructor), destructor can.
